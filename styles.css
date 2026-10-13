@@ -173,6 +173,16 @@ a {
   transition: transform .18s ease, background .18s ease;
 }
 
+.event-button {
+  margin-top: 22px;
+  background: #9dccf8;
+  color: #07101e;
+}
+
+.event-button:hover {
+  background: #b7dcff;
+}
+
 .button:hover {
   transform: translateY(-2px);
 }
