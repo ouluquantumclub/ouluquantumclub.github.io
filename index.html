@@ -1,10 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Oulu Quantum Club is a community for quantum computing, quantum information, learning, events and collaboration in Oulu, Finland." />
+  <meta name="theme-color" content="#0b1220" />
   <title>Oulu Quantum Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <h1>Oulu Quantum Club</h1>
-  <p>Website coming soon.</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Oulu Quantum Club home">
+        <img src="assets/oulu-quantum-club-logo.png" alt="Oulu Quantum Club logo" />
+        <span>Oulu Quantum Club</span>
+      </a>
+
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#activities">Activities</a>
+        <a href="#winter-school">Winter School</a>
+        <a href="#join">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-glow hero-glow-one"></div>
+      <div class="hero-glow hero-glow-two"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">QUANTUM COMMUNITY IN OULU, FINLAND</p>
+          <h1>Learn, connect and build around quantum technologies.</h1>
+          <p class="hero-text">
+            Oulu Quantum Club brings together students, researchers and professionals interested in
+            quantum computing and quantum information. We share knowledge, discuss new developments
+            and create opportunities to learn together.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#join">Join the community</a>
+            <a class="button button-secondary" href="#winter-school">Winter School 2027</a>
+          </div>
+
+          <p class="language-note">Community discussions are welcome in English and Finnish.</p>
+        </div>
+
+        <div class="hero-card">
+          <img src="assets/oulu-quantum-club-logo.png" alt="" class="hero-logo" />
+          <div class="hero-card-copy">
+            <span class="mini-label">OULU QUANTUM CLUB</span>
+            <strong>Open community for quantum enthusiasts</strong>
+            <p>Computing · Information · Software · Applications</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container two-column">
+        <div>
+          <p class="section-kicker">ABOUT</p>
+          <h2>A local community with an international outlook.</h2>
+        </div>
+        <div class="body-copy">
+          <p>
+            The club is a place to discuss quantum-related topics, share news, exchange ideas and
+            stay connected with developments in quantum information and computation.
+          </p>
+          <p>
+            You do not need to be an expert. Whether you are taking your first steps in quantum
+            computing or already working in the field, you are welcome to participate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="activities">
+      <div class="container">
+        <p class="section-kicker">WHAT WE DO</p>
+        <h2 class="section-title">A simple space for learning and collaboration.</h2>
+
+        <div class="cards">
+          <article class="card">
+            <span class="card-number">01</span>
+            <h3>Meet & discuss</h3>
+            <p>Informal conversations around quantum computing, research, tools and industry developments.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-number">02</span>
+            <h3>Learn together</h3>
+            <p>Talks, study sessions and practical workshops for different experience levels.</p>
+          </article>
+
+          <article class="card">
+            <span class="card-number">03</span>
+            <h3>Build connections</h3>
+            <p>Connect students, researchers, companies and others interested in the growing quantum ecosystem.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="winter-school">
+      <div class="container event-panel">
+        <div>
+          <p class="section-kicker light">FEATURED EVENT</p>
+          <h2>Applied Quantum Computing International Winter School</h2>
+          <p>
+            Oulu, Finland · March 2027
+          </p>
+          <p class="event-description">
+            An international winter school focused on practical quantum computing. Programme,
+            speakers, dates and registration information will be announced soon.
+          </p>
+        </div>
+        <div class="event-badge" aria-hidden="true">
+          <span>AQ</span>
+          <small>WINTER<br>SCHOOL</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="join">
+      <div class="container join-grid">
+        <div>
+          <p class="section-kicker">JOIN US</p>
+          <h2>Interested in quantum technologies in Oulu?</h2>
+          <p class="join-text">
+            Join the community to hear about discussions, meetups, workshops and future events.
+          </p>
+        </div>
+
+        <div class="contact-box">
+          <h3>Community links</h3>
+          <p>Add your preferred community, LinkedIn or contact links here when they are ready.</p>
+          <a class="button button-primary" href="https://github.com/ouluquantumclub" target="_blank" rel="noopener">
+            GitHub Organization
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-brand">
+        <img src="assets/oulu-quantum-club-logo.png" alt="" />
+        <span>Oulu Quantum Club</span>
+      </div>
+      <p>Oulu, Finland</p>
+      <p>© <span id="year"></span> Oulu Quantum Club</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
